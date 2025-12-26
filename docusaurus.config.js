@@ -36,7 +36,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/dev-hamza-h/physical-ai-and-humanoid-robotics-book-06/tree/main/',
+            'https://github.com/dev-hamza-h/physical-ai-and-humanoid-robotics-book/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -64,7 +64,7 @@ const config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/dev-hamza-h/physical-ai-and-humanoid-robotics-book-06',
+          href: 'https://github.com/dev-hamza-h/physical-ai-and-humanoid-robotics-book',
           label: 'GitHub',
           position: 'right',
         },
@@ -78,7 +78,7 @@ const config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/dev-hamza-h/physical-ai-and-humanoid-robotics-book-06',
+              href: 'https://github.com/dev-hamza-h/physical-ai-and-humanoid-robotics-book',
             },
           ],
         },
