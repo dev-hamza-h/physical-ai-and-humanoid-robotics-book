@@ -1,0 +1,171 @@
+/* =========================
+   HERO BANNER
+========================= */
+.heroBanner {
+  padding: 6rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #0a1a33 0%,
+    #123a7a 40%,
+    #3a8bff 100%
+  );
+}
+
+/* =========================
+   LIGHT + FASTER BUBBLES
+========================= */
+.heroBanner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,0.06) 0 6px, transparent 7px),
+    radial-gradient(circle at 25% 35%, rgba(255,255,255,0.05) 0 5px, transparent 6px),
+    radial-gradient(circle at 40% 15%, rgba(255,255,255,0.04) 0 7px, transparent 8px),
+    radial-gradient(circle at 60% 30%, rgba(255,255,255,0.05) 0 6px, transparent 7px),
+    radial-gradient(circle at 75% 20%, rgba(255,255,255,0.06) 0 8px, transparent 9px),
+    radial-gradient(circle at 85% 45%, rgba(255,255,255,0.045) 0 6px, transparent 7px),
+    radial-gradient(circle at 20% 70%, rgba(255,255,255,0.05) 0 7px, transparent 8px),
+    radial-gradient(circle at 45% 75%, rgba(255,255,255,0.06) 0 9px, transparent 10px),
+    radial-gradient(circle at 65% 65%, rgba(255,255,255,0.04) 0 6px, transparent 7px),
+    radial-gradient(circle at 85% 75%, rgba(255,255,255,0.05) 0 7px, transparent 8px);
+  animation: floatBubbles 15s linear infinite; /* double speed */
+  z-index: 0;
+}
+
+/* FLOATING ANIMATION */
+@keyframes floatBubbles {
+  0% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-50px) translateX(20px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   LEFT IMAGE
+========================= */
+.heroImage {
+  flex: 0 0 380px;
+}
+
+.heroImage img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+.heroContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* TITLE */
+.heroContent :global(.hero__title) {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* SUBTITLE */
+.heroContent :global(.hero__subtitle) {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 1.6rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.buttons :global(.button) {
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #123a7a;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.buttons :global(.button:hover) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media screen and (max-width: 996px) {
+
+  .heroBanner {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .heroImage {
+    flex: none;
+    width: 100%;
+    max-width: 360px;
+    margin: 0;
+  }
+
+  .heroContent {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroContent :global(.hero__title) {
+    margin: 0.3rem 0 0 0;
+  }
+
+  .heroContent :global(.hero__subtitle) {
+    margin: 0.3rem 0 0.6rem 0;
+  }
+
+  .buttons {
+    justify-content: center;
+    margin-top: 0.4rem;
+  }
+}

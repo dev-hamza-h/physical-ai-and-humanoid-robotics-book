@@ -29,9 +29,14 @@
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+*GATE: Must pass before proceeding. Re-check after design.*
 
-[Gates determined based on constitution file]
+- [ ] **Clarity & Accessibility**: Is the feature's purpose and design clear? Is it accessible to the target audience?
+- [ ] **Practical Application**: Does this feature solve a real-world problem for the user? Is it grounded in a practical use case?
+- [ ] **Rigorous Accuracy**: Have technical claims, data, and algorithms been verified? Is there a plan for testing accuracy?
+- [ ] **Visual Learning**: If the feature involves complex information, are there plans for diagrams, charts, or other visual aids?
+- [ ] **Open Source**: If the feature includes code, does it adhere to the project's open-source licensing?
+- [ ] **Community Driven**: Is there a clear path for community feedback on this feature?
 
 ## Project Structure
 

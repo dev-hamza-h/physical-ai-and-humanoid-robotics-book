@@ -1,0 +1,59 @@
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #123a7a;        /* primary blue */
+  --ifm-color-primary-dark: #0a1a33;
+  --ifm-color-primary-darker: #08225a;
+  --ifm-color-primary-darkest: #061b46;
+  --ifm-color-primary-light: #3a8bff;
+  --ifm-color-primary-lighter: #5aaeff;
+  --ifm-color-primary-lightest: #8ec2ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Lightened Dark mode palette */
+[data-theme='dark'] {
+  --ifm-color-primary: #5c8df7;       /* lighter blue for dark mode */
+  --ifm-color-primary-dark: #5c8df7;
+  --ifm-color-primary-darker: #0c2250;
+  --ifm-color-primary-darkest: #081a40;
+  --ifm-color-primary-light: #5c8df7;
+  --ifm-color-primary-lighter: #5fa0ff;
+  --ifm-color-primary-lightest: #8ec2ff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* Force navbar/header to blue in dark mode */
+[data-theme='dark'] .navbar {
+  background: linear-gradient(#0b2b60) !important;
+}
+
+
+
+/* Footer always black (light + dark mode) */
+.footer {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #dadfe6;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+
+
+
+/* Remove ONLY the unwanted gray section above footer */
+.main-wrapper {
+  background-color: #000000 !important;
+}
+
+/* Fix extra spacer div before footer */
+.main-wrapper > div:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}

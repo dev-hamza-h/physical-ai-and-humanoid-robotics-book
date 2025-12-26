@@ -208,3 +208,13 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- JavaScript/React (Docusaurus), Python 3.11 (Chatbot API & Tooling), Markdown + Docusaurus, FastAPI, ChromaDB, sentence-transformers (000-book-architecture)
+- Markdown files for book content, ChromaDB vector database for RAG embeddings. (000-book-architecture)
+- JavaScript/React (Docusaurus), Python 3.11 (Chatbot API & Tooling) + Docusaurus, FastAPI, ChromaDB, sentence-transformers (000-book-architecture)
+- JavaScript (Docusaurus/React), Python 3.11 (FastAPI, rclpy) + Docusaurus, React, FastAPI, Uvicorn, ChromaDB, sentence-transformers, ROS 2, Gazebo, Unity, NVIDIA Isaac, OpenAI Whisper (000-book-architecture)
+- ChromaDB for RAG embeddings; Markdown files for book content. (000-book-architecture)
+
+## Recent Changes
+- 000-book-architecture: Added JavaScript/React (Docusaurus), Python 3.11 (Chatbot API & Tooling), Markdown + Docusaurus, FastAPI, ChromaDB, sentence-transformers

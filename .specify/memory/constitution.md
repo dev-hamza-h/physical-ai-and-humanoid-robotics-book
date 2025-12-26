@@ -1,55 +1,70 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+---
+sync_impact_report:
+  version_change: "0.0.0 -> 1.0.0"
+  modified_principles:
+    - "PRINCIPLE_1_NAME -> Clarity and Accessibility"
+    - "PRINCIPLE_2_NAME -> Practical Application"
+    - "PRINCIPLE_3_NAME -> Rigorous Accuracy"
+    - "PRINCIPLE_4_NAME -> Visual Learning"
+    - "PRINCIPLE_5_NAME -> Open Source"
+    - "PRINCIPLE_6_NAME -> Community Driven"
+  added_sections:
+    - "Content Development Workflow"
+    - "Review and Quality Assurance"
+  removed_sections:
+    - "SECTION_2_NAME"
+    - "SECTION_3_NAME"
+  templates_to_update:
+    - path: ".specify/templates/plan-template.md"
+      status: "pending"
+    - path: ".specify/templates/spec-template.md"
+      status: "pending"
+    - path: ".specify/templates/tasks-template.md"
+      status: "pending"
+  todos:
+    - "TODO(RATIFICATION_DATE): Confirm the official start date of the project."
+---
+-->
+# Physical Ai Humanoid Robotics Book Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Clarity and Accessibility
+Content must be written in a clear, concise, and accessible manner. Technical jargon should be explained upon first use or avoided in favor of simpler language. The primary audience is students and professionals entering the field of robotics.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Practical Application
+The book must focus on practical, real-world applications of humanoid robotics. Theoretical concepts should be grounded with concrete examples, case studies, and hands-on projects.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Rigorous Accuracy
+All technical information, code examples, mathematical formulas, and diagrams must be rigorously reviewed for accuracy. Claims must be supported by citations to peer-reviewed research where appropriate.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Visual Learning
+Complex topics must be supplemented with high-quality diagrams, illustrations, and photographs to aid visual learners and improve understanding.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Open Source
+All code accompanying the book must be licensed under a permissive open-source license (e.g., MIT, Apache 2.0) and be made publicly available in a dedicated version control repository.
 
-### [PRINCIPLE_6_NAME]
+### VI. Community Driven
+The book is a living document. A transparent process for accepting community contributions, feedback, and errata must be established and maintained.
 
+## Content Development Workflow
 
-[PRINCIPLE__DESCRIPTION]
+All content additions or modifications must follow a structured workflow:
+1.  **Proposal:** A clear proposal outlining the change.
+2.  **Drafting:** Creation of the new or updated content.
+3.  **Review:** Peer review by at least one other contributor.
+4.  **Integration:** Merging the content into the main body.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Review and Quality Assurance
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+A multi-stage review process ensures quality:
+- **Technical Review:** Subject matter experts verify technical correctness.
+- **Editorial Review:** Editors check for clarity, grammar, and style.
+- **Community Review:** The broader community is invited to provide feedback on drafts.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution is the supreme governing document for the project. All contributors and maintainers must adhere to its principles. Amendments to this constitution require a formal proposal, a review period, and majority approval from the core project maintainers.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Confirm the official start date of the project. | **Last Amended**: 2025-12-10

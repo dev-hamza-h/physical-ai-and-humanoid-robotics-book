@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: "Vision-Language-Action (VLA) API"
+  version: "1.0.0"
+  description: "API for converting voice commands to robot actions."
+paths:
+  /vla/voice-to-action:
+    post:
+      summary: "Process a voice command"
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                audio_file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: "Action successfully dispatched"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transcription:
+                    type: string
+                  action_name:
+                    type: string
+                  status:
+                    type: string
+        '400':
+          description: "Bad request (e.g., no audio file)"
+        '500':
+          description: "Internal server error during processing"
